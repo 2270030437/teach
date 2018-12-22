@@ -1,5 +1,6 @@
 package com.tt.teach.dao;
 
+import com.tt.teach.pojo.Grade;
 import com.tt.teach.pojo.Subject;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
@@ -13,7 +14,7 @@ public interface SubjectDao {
     List<Subject> getSubList();
 
     @Select("select * from grade")
-    List<Subject> getGradeList();
+    List<Grade> getGradeList();
 
     @Delete("delete from subject where subjectNo=#{subjectNo}")
     int deleteSub(Integer subjectNo);

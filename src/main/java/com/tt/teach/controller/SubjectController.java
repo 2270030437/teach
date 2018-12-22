@@ -1,5 +1,6 @@
 package com.tt.teach.controller;
 
+import com.tt.teach.pojo.Grade;
 import com.tt.teach.pojo.Subject;
 import com.tt.teach.service.SubjectService;
 import com.tt.teach.utils.JsonResult;
@@ -25,7 +26,7 @@ public class SubjectController {
     @RequestMapping("/getGradeList")
     @ResponseBody
     public Object getGradeList() {
-        List<Subject> list=subjectService.getGradeList();
+        List<Grade> list=subjectService.getGradeList();
         return list;
     }
 

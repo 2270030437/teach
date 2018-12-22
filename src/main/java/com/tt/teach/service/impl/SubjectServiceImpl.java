@@ -1,6 +1,7 @@
 package com.tt.teach.service.impl;
 
 import com.tt.teach.dao.SubjectDao;
+import com.tt.teach.pojo.Grade;
 import com.tt.teach.pojo.Subject;
 import com.tt.teach.service.SubjectService;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,7 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     @Override
-    public List<Subject> getGradeList() {
+    public List<Grade> getGradeList() {
         return subjectDao.getGradeList();
     }
 
